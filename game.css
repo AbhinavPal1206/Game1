@@ -1,0 +1,342 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: "Barlow Condensed", sans-serif;
+        background: 
+        #8CC461;
+      }
+    
+      .mainbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background:#8CC461;
+    
+      }
+      
+      .minibox {
+        width: 700px;
+        height: 140px;
+        border-radius: 15px;
+        border: 3px solid white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px 20px;
+      }
+      
+      .title {
+        padding-left: 30px;
+      }
+      
+      .score h1 {
+        color: #565468;
+        font-size: 56px;
+        font-family: "Barlow", sans-serif;
+      }
+      
+      .score p {
+        color: #2a45c2;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 2.5px;
+        text-align: left;
+      }
+     .hands {
+        background-position: center;
+        background-repeat: no-repeat;
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        width: 320px;
+        height: 370px;
+        margin-top: 50px;
+        display: flex;
+        z-index: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .hands img {
+        width: 80px;
+        height: 80px;
+        display: block;
+      }
+      .hands .rock1{
+         width: 120px;
+    height: 120px;
+    background-color: #0074B6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .hands .rock {
+        width: 85px;
+    height: 85px;
+    background-color: white;
+    border-radius: 50%;
+      }
+      .hands .scissors1{
+        width: 120px;
+    height: 120px;
+    background-color: #BD00FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      
+      .hands .scissors {
+        width: 85px;
+    height: 85px;
+    background-color: white;
+    border-radius: 50%;
+      }
+
+      .paper1{
+        position: absolute;
+    left: 100px;
+    top: 140px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #FFA943;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .paper{
+        width: 85px;
+        height: 85px;
+        background-color: white;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      .hands .hand {
+        cursor: pointer;
+      }
+      
+      
+      
+      .contest {
+        display: none;
+        margin-top: 20px;
+        width: 900px;
+      }
+      
+      .contest img {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .contest > div {
+        flex: 1;
+      }
+      
+      .contest h1 {
+        color: white;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      
+      .contest .newGame {
+        color: hsl(229, 25%, 31%);
+        background-color: white;
+        padding: 12px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.15s;
+      }
+      
+      .newGame:hover {
+        background: rgb(218, 218, 218);
+        transform: translate3d(0px, -2px, 0px);
+      }
+      
+      .contest .handImageContainer {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .referee {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .referee h1 {
+        font-size: 45px;
+        color: white;
+      }
+      
+      .computerhand {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .main{
+    
+        display: flex;
+        justify-content: space-between;
+        top: 62px;
+        left: 240px;
+        border-radius: 13px;
+        border: 2px;
+        border: 5px solid #a21111;
+        width: 800px;
+        height: 158px;
+    
+    }
+    .box1{
+        color: #FFFFFF;
+    
+    
+    }
+    .box2{
+        display: flex;
+        justify-content:space-between;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .box3{
+        width: 139px;
+    height: 118px;
+    top: 77px;
+    left: 881px;
+    border-radius: 9px;
+    background: #FFFFFF;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+    
+    .box3 h2{
+        background: white;
+        font-weight: 1000;
+        font-size: 50px;
+        margin-top: 15px;
+    }
+    p{
+    
+        font-family: Roboto;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-align: left;
+    
+    }
+    
+    .btns{
+        display: flex;
+        justify-content: flex-end;
+        margin: 180px;
+    }
+    
+    .btn-container a:link, a:visited{
+    border: 2px solid white;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 9px;
+    font-family: Roboto;
+    font-size: 24px;
+    }
+    
+    .btn-container a:hover, a:active {
+    background-color: whitesmoke;
+    color: black;
+    }
+    
+    .nextBtn{
+        display: none;
+    }
+    
+    
+    .rulebox{
+        background-color: #004429;
+        color: #FFFFFF;
+        width: 278px;
+        height: 325px;
+        top: 220px;
+        float: right;
+        border-radius: 13px;
+        border: 7px;
+        border: 7px solid white;
+        position: absolute;
+        display: none;
+    }
+    h2{
+        background: none;
+        text-align: center;
+    }
+    ul{
+        background: none;
+        padding: 0px 20px 0px 20px;
+        line-height: 22px;
+    }
+    li{
+        background: none;
+    }
+    
+    ::marker{
+        color: darkgoldenrod;
+    }
+    .rulebox svg{
+        width: 50px;
+        height: 50px;
+        top: 300px;
+        left: 1217px;
+        background: linear-gradient(0deg, #FF0000, #FF0000),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+        border: 5px solid #FFFFFF;
+        border-radius: 50%;
+        float: right;
+        cursor: pointer;
+        margin: -25px;
+    }
+    
+    .rule-btn{
+        position: relative;
+        top: 2px;
+        left: 10px;
+        background-color:#8CC461;
+        border: 2px solid white;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin: 8px;
+        font-family: Roboto;
+        font-size: 24px;
+    }
+    button{
+        cursor: pointer;
+    }
+    
+    
